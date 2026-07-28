@@ -1,5 +1,7 @@
 package com.demo.arrays;
 
+import java.util.HashMap;
+
 public class ArraysProblemsIntermediate {
 
     // find missing numbers
@@ -14,8 +16,19 @@ public class ArraysProblemsIntermediate {
         System.out.println("Missing Number : " + (expected - actual));
     }
 
+    // find duplicate element
+    public static void findDuplicate(int[] arr) {
+        HashMap<Integer, Integer> map = new HashMap<>();
+        for (int num : arr) {
+            map.put(num, map.getOrDefault(num, 0) + 1);
+        }
+        System.out.println(map);
+    }
+
     public static void main(String[] args) {
-        int[] arr = { 1, 2, 3, 4, 6};
-        findMissingNumber(arr);
+        int[] arr = { 1, 2, 3, 4, 6 };
+        int[] arr1 = { 1, 2, 3, 4, 2, 3, 5, 2 };
+        // findMissingNumber(arr);
+        findDuplicate(arr1);
     }
 }
