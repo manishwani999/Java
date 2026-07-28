@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Scanner;
 
-public class ArraysProblems {
+public class ArraysProblemsBeginner {
 
     // find largest elements
     public static void findLargest(int arr[]) {
@@ -227,7 +227,7 @@ public class ArraysProblems {
         // leftRotateArrayByOne(arr);
         // rightRotateArrayByOne(arr);
         // rightRotateByK(arr);
-        // leftRotateByK(arr);
+        leftRotateByK(arr);
 
     }
 }
