@@ -92,6 +92,6 @@ public class Arrays {
         // findSecondLargest(arr);
         // findSmallest(arr);
         // findSecondSmallest(arr);
-        // checkSortedArray(arrr);
+        checkSortedArray(arrr);
     }
 }
