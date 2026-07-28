@@ -183,6 +183,7 @@ public class ArraysProblemsBeginner {
         }
 
         System.out.println(Arrays.toString(arr));
+        sc.close();
     }
 
     // rotate array left by k
@@ -199,6 +200,7 @@ public class ArraysProblemsBeginner {
             arr[arr.length - 1] = first;
         }
         System.out.println(Arrays.toString(arr));
+        sc.close();
     }
 
     public static void main(String[] args) {
@@ -226,8 +228,7 @@ public class ArraysProblemsBeginner {
         // moveAllZerosToEnd(arrr);
         // leftRotateArrayByOne(arr);
         // rightRotateArrayByOne(arr);
-        // rightRotateByK(arr);
-        leftRotateByK(arr);
+        // rightRotateByK(arr)
 
     }
 }
