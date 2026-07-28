@@ -1,6 +1,7 @@
 package com.demo.arrays;
 
 import java.util.HashMap;
+import java.util.HashSet;
 
 public class ArraysProblemsIntermediate {
 
@@ -25,10 +26,24 @@ public class ArraysProblemsIntermediate {
         System.out.println(map);
     }
 
+    // find duplicate element
+    public static void findDuplicate(int arr[]) {
+        HashSet<Integer> set = new HashSet<>();
+        HashSet<Integer> duplicates = new HashSet<>();
+
+        for (int num : arr) {
+            if (!set.add(num)) {
+                duplicates.add(num);
+            }
+        }
+        System.out.println(duplicates);
+    }
+
     public static void main(String[] args) {
         int[] arr = { 1, 2, 3, 4, 6 };
         int[] arr1 = { 1, 2, 3, 4, 2, 3, 5, 2 };
         // findMissingNumber(arr);
         // countFrequencyOfElement(arr1);
+        findDuplicate(arr1);
     }
 }
