@@ -1,6 +1,8 @@
 package com.demo.arrays;
 
-public class Arrays {
+import java.util.Arrays;
+
+public class ArraysProblems {
 
     // find largest elements
     public static void findLargest(int arr[]) {
@@ -83,15 +85,39 @@ public class Arrays {
         }
     }
 
+    // Remove Duplicates
+    public static int removeDuplicatesSorted(int arr[]) {
+
+        if (arr.length == 0) {
+            return 0;
+        }
+
+        int index = 0;
+        for (int i = 1; i < arr.length; i++) {
+            if (arr[i] != arr[index]) {
+                index++;
+                arr[index] = arr[i];
+            }
+        }
+
+        return index + 1;
+    }
+
     public static void main(String[] args) {
         int[] arr = { 1, 2, 3, 40, 5 };
         int[] sort = { 5, 3, 1, 2, 4 };
         int[] arrr = { 4 };
+        int[] dup = { 1, 2, 2, 3, 4, 5, 5 };
 
         // findLargest(arr);
         // findSecondLargest(arr);
         // findSmallest(arr);
         // findSecondSmallest(arr);
-        checkSortedArray(arrr);
+        // checkSortedArray(arrr);
+        int length = removeDuplicatesSorted(dup);
+        for (int i = 0; i < length; i++) {
+            System.out.print(dup[i] + " ");
+        }
+
     }
 }
