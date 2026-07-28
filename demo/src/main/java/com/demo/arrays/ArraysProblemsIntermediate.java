@@ -16,8 +16,8 @@ public class ArraysProblemsIntermediate {
         System.out.println("Missing Number : " + (expected - actual));
     }
 
-    // find duplicate element
-    public static void findDuplicate(int[] arr) {
+    // count frequency of element
+    public static void countFrequencyOfElement(int[] arr) {
         HashMap<Integer, Integer> map = new HashMap<>();
         for (int num : arr) {
             map.put(num, map.getOrDefault(num, 0) + 1);
@@ -29,6 +29,6 @@ public class ArraysProblemsIntermediate {
         int[] arr = { 1, 2, 3, 4, 6 };
         int[] arr1 = { 1, 2, 3, 4, 2, 3, 5, 2 };
         // findMissingNumber(arr);
-        findDuplicate(arr1);
+        // countFrequencyOfElement(arr1);
     }
 }
