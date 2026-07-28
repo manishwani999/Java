@@ -225,7 +225,7 @@ public class ArraysProblems {
         // reverseArray(arr);
         // moveAllZerosToEnd(arrr);
         // leftRotateArrayByOne(arr);
-        rightRotateArrayByOne(arr);
+        // rightRotateArrayByOne(arr);
         // rightRotateByK(arr);
         // leftRotateByK(arr);
 
