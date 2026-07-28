@@ -1,6 +1,7 @@
 package com.demo.arrays;
 
 import java.util.Arrays;
+import java.util.HashSet;
 
 public class ArraysProblems {
 
@@ -85,7 +86,7 @@ public class ArraysProblems {
         }
     }
 
-    // Remove Duplicates
+    // Remove Duplicates - sorted array
     public static int removeDuplicatesSorted(int arr[]) {
 
         if (arr.length == 0) {
@@ -103,6 +104,15 @@ public class ArraysProblems {
         return index + 1;
     }
 
+    // remove duplicates - unsorted array
+    public static void removeDuplicatesUnsorted(int[] arr) {
+        HashSet<Integer> set = new HashSet<>();
+        for (int num : arr) {
+            set.add(num);
+        }
+        System.out.println(set);
+    }
+
     public static void main(String[] args) {
         int[] arr = { 1, 2, 3, 40, 5 };
         int[] sort = { 5, 3, 1, 2, 4 };
@@ -118,6 +128,9 @@ public class ArraysProblems {
         for (int i = 0; i < length; i++) {
             System.out.print(dup[i] + " ");
         }
+
+        System.out.println();
+        removeDuplicatesUnsorted(dup);
 
     }
 }
