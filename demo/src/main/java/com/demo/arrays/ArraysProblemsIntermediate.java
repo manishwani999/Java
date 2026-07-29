@@ -2,6 +2,7 @@ package com.demo.arrays;
 
 import java.util.HashMap;
 import java.util.HashSet;
+import java.util.Scanner;
 
 public class ArraysProblemsIntermediate {
 
@@ -39,11 +40,31 @@ public class ArraysProblemsIntermediate {
         System.out.println(duplicates);
     }
 
+    // pair with given sum
+    public static void pairWithGivenSum(int[] arr) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter target : ");
+        int target = sc.nextInt();
+
+        HashMap<Integer, Integer> map = new HashMap<>();
+        for (int num : arr) {
+            int complement = target - num;
+            if (map.containsKey(complement)) {
+                System.out.println(complement + " " + num);
+                return;
+            }
+            map.put(num, 1);
+        }
+        System.out.println(map);
+        sc.close();
+    }
+
     public static void main(String[] args) {
         int[] arr = { 1, 2, 3, 4, 6 };
         int[] arr1 = { 1, 2, 3, 4, 2, 3, 5, 2 };
         // findMissingNumber(arr);
         // countFrequencyOfElement(arr1);
-        findDuplicate(arr1);
+        // findDuplicate(arr1);
+        // pairWithGivenSum(arr);
     }
 }
