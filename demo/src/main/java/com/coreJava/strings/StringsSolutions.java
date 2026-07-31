@@ -42,12 +42,41 @@ public class StringsSolutions {
         return words.length;
     }
 
+    // shift first character to last from string
+    public static String shiftFirstCharToLast(String str) {
+        StringBuilder sb = new StringBuilder(str);
+        sb.append(str.charAt(0));
+        sb.deleteCharAt(0);
+        return sb.toString();
+    }
+
+    // shift last character to first from string
+    public static String shiftLastCharToFirst(String str) {
+        StringBuilder sb = new StringBuilder(str);
+        sb.insert(0, sb.charAt(sb.length() - 1));
+        sb.deleteCharAt(sb.length() - 1);
+        return sb.toString();
+    }
+
+    // swap first and last character from string
+    public static String swapFirstAndLastChar(String str) {
+        StringBuilder sb = new StringBuilder(str);
+        sb.insert(0, str.charAt(str.length() - 1));
+        sb.append(str.charAt(0));
+        sb.deleteCharAt(1);
+        sb.deleteCharAt(sb.length() - 2);
+        return sb.toString();
+    }
+
     public static void main(String[] args) {
 
         System.out.println(reverseString("Java"));
         System.out.println(reverseByWords("Java name"));
         System.out.println(isPalindrome("raceCar"));
-        System.out.println(countWords("Java   is  awesome"));
+        System.out.println("Number of words : " + countWords("Java   is  awesome"));
+        System.out.println(shiftFirstCharToLast("Manish"));
+        System.out.println(shiftLastCharToFirst("anishM"));
+        System.out.println(swapFirstAndLastChar("Ganesh"));
     }
 
 }
