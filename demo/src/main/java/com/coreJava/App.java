@@ -1,4 +1,4 @@
-package com.demo;
+package com.coreJava;
 
 public class App {
     public static void main(String[] args) {

@@ -1,6 +1,4 @@
-package com.demo.strings;
-
-import java.util.Arrays;
+package com.coreJava.strings;
 
 public class StringsSolutions {
 

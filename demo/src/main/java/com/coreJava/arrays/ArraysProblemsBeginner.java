@@ -1,4 +1,4 @@
-package com.demo.arrays;
+package com.coreJava.arrays;
 
 import java.util.Arrays;
 import java.util.HashSet;
@@ -204,10 +204,10 @@ public class ArraysProblemsBeginner {
     }
 
     public static void main(String[] args) {
-        int[] arr = { 1, 2, 3, 4, 5 };
-        int[] sort = { 5, 3, 1, 2, 4 };
-        int[] arrr = { 4, 0, 5, 2, 0, 1, 0, 0, 2 };
-        int[] dup = { 1, 2, 2, 3, 4, 5, 5 };
+        int[] arr = {1, 2, 3, 4, 5};
+        int[] sort = {5, 3, 1, 2, 4};
+        int[] arrr = {4, 0, 5, 2, 0, 1, 0, 0, 2};
+        int[] dup = {1, 2, 2, 3, 4, 5, 5};
 
         // findLargest(arr);
         // findSecondLargest(arr);

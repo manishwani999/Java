@@ -1,4 +1,4 @@
-package com.demo.arrays;
+package com.coreJava.arrays;
 
 import java.util.HashMap;
 import java.util.HashSet;
@@ -60,8 +60,8 @@ public class ArraysProblemsIntermediate {
     }
 
     public static void main(String[] args) {
-        int[] arr = { 1, 2, 3, 4, 6 };
-        int[] arr1 = { 1, 2, 3, 4, 2, 3, 5, 2 };
+        int[] arr = {1, 2, 3, 4, 6};
+        int[] arr1 = {1, 2, 3, 4, 2, 3, 5, 2};
         // findMissingNumber(arr);
         // countFrequencyOfElement(arr1);
         // findDuplicate(arr1);

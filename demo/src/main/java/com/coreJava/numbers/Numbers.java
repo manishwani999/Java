@@ -1,4 +1,4 @@
-package com.demo.numbers;
+package com.coreJava.numbers;
 
 public class Numbers {
 
