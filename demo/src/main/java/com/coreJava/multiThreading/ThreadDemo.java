@@ -10,12 +10,12 @@ public class ThreadDemo {
         t2.start();
         t3.start();
 
-        t1.setName("Ganesh");
-        t1.setPriority(10);
+       /* t1.setName("Ganesh");
+        t1.setPriority(10);*/
 
-        for (int i = 21; i <= 30; i++) {
-            System.out.println("Main Thread............"); // Executed by main thread
-        }
+       /* for (int i = 21; i <= 30; i++) {
+            System.out.println("Main Thread............");// Executed by main thread
+        }*/
     }
 
 }

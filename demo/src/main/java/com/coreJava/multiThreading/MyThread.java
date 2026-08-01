@@ -8,4 +8,9 @@ public class MyThread extends Thread {
             System.out.println(Thread.currentThread().getName()); // Executed by child thread
         }
     }
+
+    public void start() {
+        super.start();
+        System.out.println("start method");
+    }
 }
