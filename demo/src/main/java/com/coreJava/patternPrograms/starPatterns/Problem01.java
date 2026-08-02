@@ -1,6 +1,6 @@
 package com.coreJava.patternPrograms.starPatterns;
 
-public class ProblemOne {
+public class Problem01 {
 
     /*
 
