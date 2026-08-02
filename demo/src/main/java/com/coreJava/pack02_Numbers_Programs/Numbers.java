@@ -1,4 +1,4 @@
-package com.coreJava.numbers;
+package com.coreJava.pack02_Numbers_Programs;
 
 public class Numbers {
 

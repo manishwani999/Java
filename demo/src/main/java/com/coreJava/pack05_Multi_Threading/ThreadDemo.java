@@ -1,4 +1,4 @@
-package com.coreJava.multiThreading;
+package com.coreJava.pack05_Multi_Threading;
 
 public class ThreadDemo {
 

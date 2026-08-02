@@ -1,4 +1,4 @@
-package com.coreJava.patternPrograms.numberPatterns;
+package com.coreJava.pack01_Pattern_Programs.numberPatterns;
 
 public class Problem06 {
 

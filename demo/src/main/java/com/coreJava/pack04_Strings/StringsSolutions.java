@@ -1,4 +1,4 @@
-package com.coreJava.strings;
+package com.coreJava.pack04_Strings;
 
 public class StringsSolutions {
 

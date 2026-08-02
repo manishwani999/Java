@@ -1,21 +1,19 @@
-package com.coreJava.patternPrograms.numberPatterns;
+package com.coreJava.pack01_Pattern_Programs.numberPatterns;
 
-public class Problem01 {
-
+public class Problem04 {
 /*
   ============
-    11111
-    22222
-    33333
-    44444
+    1
+    22
+    333
+    4444
     55555
   ============
 */
 
-
     public static void solution(int n) {
         for (int i = 1; i <= n; i++) {
-            for (int j = 1; j <= n; j++) {
+            for (int j = 1; j <= i; j++) {
                 System.out.print(i);
             }
             System.out.println();

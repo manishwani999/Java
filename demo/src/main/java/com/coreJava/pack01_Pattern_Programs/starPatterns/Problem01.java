@@ -1,4 +1,4 @@
-package com.coreJava.patternPrograms.starPatterns;
+package com.coreJava.pack01_Pattern_Programs.starPatterns;
 
 public class Problem01 {
 
