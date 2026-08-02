@@ -1,6 +1,6 @@
-package com.coreJava.pack05_Multi_Threading;
+package com.coreJava.pack05_Multi_Threading.p01_Thread_Define;
 
-public class SecondThread implements Runnable {
+public class MyRunnable implements Runnable {
 
     @Override
     public void run() {

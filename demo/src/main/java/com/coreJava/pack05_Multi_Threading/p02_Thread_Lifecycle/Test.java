@@ -1,4 +1,4 @@
-package com.coreJava.pack05_Multi_Threading.threadLifecycle;
+package com.coreJava.pack05_Multi_Threading.p02_Thread_Lifecycle;
 
 class MyThread extends Thread {
     public void run() {
