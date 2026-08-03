@@ -92,11 +92,38 @@ public class Numbers {
         return a += b;
     }
 
+    // shift first digit to last    1234 - 2341
+    public static int shiftFirstToLast(int n) {
+        int temp = n;
+        int count = 1;
+        while (temp > 10) {
+            temp /= 10;
+            count *= 10;
+        }
+        int first = n / count;
+        int remainingDigits = n % count;
+        return remainingDigits * 10 + first;
+    }
+
+    // shift last digit to first    -- 1236 -> 6123
+    public static int shiftLastToFirst(int n) {
+        int temp = n;
+        int count = 1;
+        int last = n % 10;
+
+        while (temp > 10) {
+            count *= 10;
+            temp /= 10;
+        }
+        int remaining = n / 10;
+        return last * count + remaining;
+    }
+
     // Reverse a number
     public static void reverseNumber(int num) {
-        int rev = 0;
+        String rev = "";        // this approach is useful for 10000 --> 00001
         while (num != 0) {
-            rev *= 10;
+//            rev *= 10;
             rev += num % 10;
             num /= 10;
         }
@@ -176,7 +203,7 @@ public class Numbers {
         return fact;
     }
 
-    // fibonacci series
+    // Fibonacci series
     public static void fibonacciSeries(int num) {
         int first = 0, second = 1;
         for (int i = 1; i <= num; i++) {
@@ -201,6 +228,6 @@ public class Numbers {
     //
 
     public static void main(String[] args) {
-        System.out.println(appendTwoNumbers(12345, 4321));
+        System.out.println(shiftLastToFirst(123456));
     }
 }
