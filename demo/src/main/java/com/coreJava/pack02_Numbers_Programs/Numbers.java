@@ -2,6 +2,96 @@ package com.coreJava.pack02_Numbers_Programs;
 
 public class Numbers {
 
+    // find last digit of given number
+    public static int lastDigit(int n) {
+        return n % 10;
+    }
+
+    // find second last digit of given number
+    public static int secondLastDigit(int n) {
+        return (n /= 10) % 10;
+    }
+
+    // find first digit of given number
+    public static int firstDigit(int n) {
+        while (n > 10) {
+            n /= 10;
+        }
+        return n %= 10;
+    }
+
+    // find second digit of given number
+    public static int secondDigit(int n) {
+        while (n >= 99) {
+            n /= 10;
+        }
+        return n % 10;
+    }
+
+    // find sum of digits
+    public static int sumOfDigits(int n) {
+        int sum = 0;
+        while (n != 0) {
+            sum += n % 10;
+            n /= 10;
+        }
+        return sum;
+    }
+
+    //    find average of digits of given number
+    public static double averageOfDigits(int n) {
+        int sum = 0;
+        int count = 0;
+        while (n != 0) {
+            sum += n % 10;
+            n /= 10;
+            count++;
+        }
+        return sum / count;
+    }
+
+    // append sum of digit at the end of number
+    public static int appendSumAtEnd(int n) {
+        int sum = 0;
+        int temp = n;
+        while (temp != 0) {
+            sum += temp % 10;
+            temp /= 10;
+        }
+        if (sum >= 10) {
+            n *= 100;
+        } else {
+            n *= 10;
+        }
+        return n += sum;
+    }
+
+    // append sum at first
+    public static int appendSumAtFirst(int n) {
+        int sum = 0;
+        int count = 1;
+        int temp = n;
+        while (temp != 0) {
+            sum += temp % 10;
+            temp /= 10;
+            count *= 10;
+        }
+        sum *= count;
+        return sum += n;
+    }
+
+    // append two numbers
+    public static int appendTwoNumbers(int a, int b) {
+        int temp = b;
+        int count = 1;
+        while (temp != 0) {
+            temp /= 10;
+            count *= 10;
+        }
+        a *= count;
+        return a += b;
+    }
+
     // Reverse a number
     public static void reverseNumber(int num) {
         int rev = 0;
@@ -97,15 +187,6 @@ public class Numbers {
         }
     }
 
-    // sum of digits
-    public static int sumOfDigits(int num) {
-        int sum = 0;
-        while (num != 0) {
-            sum += num % 10;
-            num /= 10;
-        }
-        return sum;
-    }
 
     // count digits
     public static int countDigits(int num) {
@@ -117,15 +198,9 @@ public class Numbers {
         return count;
     }
 
+    //
+
     public static void main(String[] args) {
-        // reverseNumber(1234);
-        // palindromeNumber(1212);
-        // System.err.println("is Armstrong Number: " + armstrongNumber(153));
-        // System.out.println(primeNumber(11));
-        // printPrimeInRange(5, 20);
-        // System.out.println(factorial(24));
-        // fibonacciSeries(8);
-        // System.out.println(sumOfDigits(181));
-        // System.out.println(countDigits(564));
+        System.out.println(appendTwoNumbers(12345, 4321));
     }
 }
