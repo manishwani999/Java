@@ -14,7 +14,7 @@ package com.coreJava.pack03_Variables;
 public class JavaVariables {
 
 //    static variable - automatically initialized to default (0)
-    static int age;
+    static int age = 35;
 
 
 //    instance variable - automatically initialized to default (0).
@@ -23,10 +23,10 @@ public class JavaVariables {
 
     public static void main(String[] args) {
         // variable declaration + initialization
-        int age = 23;   // Local Variable --> must be initialized at same time of declaration
+//        int age = 23;   // Local Variable --> must be initialized at same time of declaration
 
         // assignment --> change the value of existing variable.
-        age = 24;
+//        age = 24;
 
 //        int myAge;  // invalid
 //        System.out.println(myAge); // Compile Error: Variable 'myAge' might not have been initialized

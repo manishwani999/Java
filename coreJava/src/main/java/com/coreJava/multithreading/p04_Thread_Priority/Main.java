@@ -1,4 +1,4 @@
-package com.coreJava.pack05_Multi_Threading.p04_Thread_Priority;
+package com.coreJava.multithreading.p04_Thread_Priority;
 
 public class Main {
     public static void main(String[] args) {

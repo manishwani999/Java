@@ -1,4 +1,4 @@
-package com.coreJava.pack05_Multi_Threading.p03_Thread_Name;
+package com.coreJava.multithreading.p03_Thread_Name;
 
 
 public class Main {

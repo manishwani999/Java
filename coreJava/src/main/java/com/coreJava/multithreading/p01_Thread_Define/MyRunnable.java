@@ -1,4 +1,4 @@
-package com.coreJava.pack05_Multi_Threading.p01_Thread_Define;
+package com.coreJava.multithreading.p01_Thread_Define;
 
 public class MyRunnable implements Runnable {
 
