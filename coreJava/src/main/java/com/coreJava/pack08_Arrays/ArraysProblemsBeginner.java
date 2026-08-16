@@ -1,4 +1,4 @@
-package com.coreJava.pack03_Arrays;
+package com.coreJava.pack08_Arrays;
 
 import java.util.Arrays;
 import java.util.HashSet;
