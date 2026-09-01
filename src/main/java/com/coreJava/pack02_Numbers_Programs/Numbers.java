@@ -14,7 +14,7 @@ public class Numbers {
 
     // find first digit of given number
     public static int firstDigit(int n) {
-        while (n > 10) {
+        while (n >= 10) {
             n /= 10;
         }
         return n %= 10;
@@ -228,6 +228,7 @@ public class Numbers {
     //
 
     public static void main(String[] args) {
-        System.out.println(shiftLastToFirst(123456));
+//        System.out.println(shiftLastToFirst(123456));
+        System.out.println(firstDigit(10));
     }
 }
