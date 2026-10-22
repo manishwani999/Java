@@ -2,16 +2,16 @@ package com.coreJava.pack09_Strings;
 
 public class StringsSolutions {
 
-    // Reverse String
+    // Reverse a string
     public static String reverseString(String str) {
 
-        StringBuilder rev = new StringBuilder();
+        StringBuilder sb = new StringBuilder();
 
         for (int i = str.length() - 1; i >= 0; i--) {
-            rev.append(str.charAt(i));
+            sb.append(str.charAt(i));
         }
 
-        return rev.toString();
+        return sb.toString();
     }
 
     // reverse String by words
@@ -24,7 +24,6 @@ public class StringsSolutions {
                 sb.append(" ");
             }
         }
-
         return sb.toString();
     }
 
@@ -68,15 +67,35 @@ public class StringsSolutions {
         return sb.toString();
     }
 
-    public static void main(String[] args) {
+    //    Return first non-repeated character
+    public static char firstNonRepeatingChar(String str) {
 
-        System.out.println(reverseString("Java"));
+        if (str == null || str.isEmpty()) return '$';
+
+        int[] freq = new int[256];
+        for (int i = 0; i < str.length(); i++) {
+            freq[str.charAt(i)]++;
+        }
+
+        for (int i = 0; i < str.length(); i++) {
+            if (freq[str.charAt(i)] == 1) {
+                return str.charAt(i);
+            }
+        }
+
+        return '$';
+    }
+
+    public static void main(String[] args) {
+        /*System.out.println(reverseString("Java"));
         System.out.println(reverseByWords("Java name"));
         System.out.println(isPalindrome("raceCar"));
         System.out.println("Number of words : " + countWords("Java   is  awesome"));
         System.out.println(shiftFirstCharToLast("Manish"));
         System.out.println(shiftLastCharToFirst("anishM"));
         System.out.println(swapFirstAndLastChar("Ganesh"));
+        System.out.println(firstNonRepeatingChar("swiss"));
+         */
     }
 
 }
