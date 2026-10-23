@@ -1,0 +1,46 @@
+Exception:
+    -   An exception is an unwanted and unexpected event that terminates the normal flow of
+        program.
+    -   Example:
+        -   Division by zero
+        -   Accessing invalid index
+        -   Using null reference
+
+                                    Throwable
+                                    ____|____
+                                 Error      Exception
+                                            ____|_______
+                                            |           |
+                                         Checked       Unchecked
+                                            |               |
+                                    Compile-time checked  Run-time Checked
+                                            |                  |
+                              IOException, SQLException     ArithmeticException,
+                                                            NullPointerException,
+                                                            ArrayIndexOutOfBoundsException.
+
+Error:
+    -   An error is a serious problem that occurs during program execution and cannot be
+        handled by the program.
+    -   Example:
+        -   StackOverFlowError
+        -   OutOfMemoryError
+        -   VirtualMachineError
+
+Blocks in Exception Handling:
+    -   try
+        -   try block contains doubtful statements that may cause of exception
+        -   try block must be followed by catch or finally block
+    -   catch
+        -   catch block used to handle the exception thrown by try block
+        -   we can handle multiple exceptions in catch block
+    -   finally
+        -   finally block always executed, no matter exception occurred or not.
+        -   finally block used to execute cleanup code.
+        -   finally block is skipped only if System.exit() is called or JVM crashes.
+
+    NOTE:
+        -   we can write try with finally, without catch block.
+        -   but we can not write catch without try block
+
+throw and throws
