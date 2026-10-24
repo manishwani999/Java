@@ -10,8 +10,8 @@ public class Solutions {
     */
 
     public static void solutionOne() {
-        int rows = 4;
-        for (int i = 1; i <= rows; i++) {
+        int row = 4;
+        for (int i = 1; i <= row; i++) {
             for (int j = 1; j <= i; j++) {
                 System.out.print(j);
             }
@@ -27,8 +27,8 @@ public class Solutions {
     */
 
     public static void solutionTwo() {
-        int rows = 4;
-        for (int i = 1; i <= rows; i++) {
+        int row = 4;
+        for (int i = 1; i <= row; i++) {
             int count = i;
             for (int j = 1; j <= i; j++) {
                 System.out.print(count);
@@ -51,8 +51,8 @@ public class Solutions {
     */
 
     public static void solutionThree() {
-        int rows = 9;
-        for (int i = rows; i >= 1; i--) {
+        int row = 9;
+        for (int i = row; i >= 1; i--) {
             for (int j = i; j >= 1; j--) {
                 System.out.print(j);
             }
@@ -74,8 +74,8 @@ public class Solutions {
     */
 
     public static void solutionFour() {
-        int rows = 9;
-        for (int i = rows; i >= 1; i--) {
+        int row = 9;
+        for (int i = 9; i >= 1; i--) {
             for (int j = i; j >= 1; j--) {
                 if (j == 9) {
                     System.out.print(6);
@@ -101,17 +101,17 @@ public class Solutions {
     */
 
     public static void solutionFive() {
-        int rows = 4;
-        for (int i = 1; i <= rows * 2; i++) {
+        int row = 4;
+        for (int i = 1; i <= row * 2; i++) {
             int currentRow;
-            if (i <= rows) {
+            if (i <= row) {
                 currentRow = i;
             } else {
-                currentRow = rows * 2 - i + 1;
+                currentRow = 2 * row - i + 1;
             }
 
-//            space
-            for (int j = 1; j <= rows - currentRow; j++) {
+//            spaces
+            for (int j = 1; j <= row - currentRow; j++) {
                 System.out.print(" ");
             }
 
@@ -124,7 +124,9 @@ public class Solutions {
             for (int j = currentRow - 1; j >= 1; j--) {
                 System.out.print(j);
             }
+
             System.out.println();
+
         }
     }
 
@@ -143,7 +145,7 @@ public class Solutions {
     public static void solutionSix() {
         int rows = 4;
         for (int i = 1; i <= rows; i++) {
-            for (int j = 1; j <= rows - i; j++) {
+            for (int j = rows - i; j >= 1; j--) {
                 System.out.print(" ");
             }
             for (int j = 1; j <= i; j++) {
@@ -154,13 +156,12 @@ public class Solutions {
             }
             System.out.println();
         }
-
         int shift = rows + 3;
         for (int i = rows; i >= 1; i--) {
             for (int j = 1; j <= shift + rows - i; j++) {
                 System.out.print(" ");
             }
-            for (int j = 1; j <=i; j++) {
+            for (int j = 1; j <= i; j++) {
                 System.out.print(j);
             }
             for (int j = i - 1; j >= 1; j--) {
@@ -171,35 +172,7 @@ public class Solutions {
     }
 
     public static void solutionPractice() {
-        int rows = 4;
-        for (int i = 1; i <= rows; i++) {
 
-            for (int j = rows - 1; j >= i; j--) {
-                System.out.print(" ");
-            }
-
-            for (int j = 1; j <= i; j++) {
-                System.out.print(j);
-            }
-
-            for (int j = i-1; j >= 1; j--) {
-                System.out.print(j);
-            }
-            System.out.println();
-        }
-        int shift = rows + 3;
-        for (int i = rows; i >= 1; i--) {
-            for (int j = 1; j <= shift + rows - i; j++) {
-                System.out.print(" ");
-            }
-            for (int j = 1; j <= i; j++) {
-                System.out.print(j);
-            }
-            for (int j = i - 1; j >= 1; j--) {
-                System.out.print(j);
-            }
-            System.out.println();
-        }
     }
 
 
@@ -210,10 +183,9 @@ public class Solutions {
 //        solutionThree();
 //        solutionFour();
 //        solutionFive();
-//        solutionSix();
+        solutionSix();
 
-        solutionPractice();
-
+//        solutionPractice();
 
     }
 
