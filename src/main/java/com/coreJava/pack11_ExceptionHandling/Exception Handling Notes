@@ -44,3 +44,47 @@ Blocks in Exception Handling:
         -   but we can not write catch without try block
 
 throw and throws
+    -   throw
+        -   throw is used inside method or block of code
+        -   throw is used to explicitly throw an exception
+        -   throw throws one exception object at a time
+        -   throw followed by an exception object
+        e.g. -> throw new ArithmeticException();
+
+    -   throws
+        -   throws is used in method declaration
+        -   declares exceptions that a method may propagates to its caller
+        -   throws can declare multiple exception types, separated by commas
+        -   throws followed by exception class names.
+        e.g -> throws IOException, SQLException
+
+    IMP POINTS
+        -   throw works with both checked and unchecked exceptions
+        -   throws is especially important for declaring checked exceptions, but it can
+            also declare unchecked exceptions
+
+Custom Exception
+    -   Why do we need Custom Exception
+        -   Application specific error handling
+        -   Code is readable and meaningful
+        -   meaningful message for user
+        -   best practice for real time projects.
+
+    - How to create custom Exceptions
+        -   Two ways of creating custom exception
+            1.  extending Exception class
+                =   in this case (Checked Exceptions),
+                    compiler will force to handle this exception
+            2.  extending RuntimeException class
+                =   (Unchecked Exceptions), compiler does not force to handle them
+
+    NOTE: Checked exception is for Business rule violation and
+          Unchecked for programing or validation error
+
+
+Multiple Catch Block in Java
+    -   Multiple catch block is used when one try catch have multiple exceptions.
+    POINTS TO REMEMBER
+    -   if try block have multiple exceptions, try always handles first exception
+    -   catch block execute in top to bottom exception propagation
+    -   specific exception is always write before the Parent Exception

@@ -24,7 +24,7 @@ public class TrowsKeyword {
 
         try {
             divide();
-        } catch (ArithmeticException e) {
+        } catch (Exception e) {
             System.out.println(e.getMessage());
         }
 
